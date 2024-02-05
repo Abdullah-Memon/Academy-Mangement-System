@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15C8A7CC-6F5B-42F9-A540-3464CC62612E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FIDXACADEMY</RootNamespace>
+    <AssemblyName>FIDXACADEMY</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Desktop\Deshboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop\Deshboard.Designer.cs">
+      <DependentUpon>Deshboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\OtherDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Other\OtherDashboard.Designer.cs">
+      <DependentUpon>OtherDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\AddExpense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Other\AddExpense.Designer.cs">
+      <DependentUpon>AddExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\ExpenseType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Other\ExpenseType.Designer.cs">
+      <DependentUpon>ExpenseType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Course.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Other\Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\Dashboard_Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desktop\Dashboard_Detail.Designer.cs">
+      <DependentUpon>Dashboard_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataBase.cs" />
+    <Compile Include="Desktop\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Program.cs" />
+    <Compile Include="Other\Domicile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Other\Domicile.Designer.cs">
+      <DependentUpon>Domicile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admission\StudentAdmission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admission\StudentAdmission.Designer.cs">
+      <DependentUpon>StudentAdmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmiitStudentFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubmiitStudentFee.Designer.cs">
+      <DependentUpon>SubmiitStudentFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudent\ViewStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewStudent\ViewStudents.Designer.cs">
+      <DependentUpon>ViewStudents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Desktop\Deshboard.resx">
+      <DependentUpon>Deshboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\OtherDashboard.resx">
+      <DependentUpon>OtherDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\AddExpense.resx">
+      <DependentUpon>AddExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\ExpenseType.resx">
+      <DependentUpon>ExpenseType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\Dashboard_Detail.resx">
+      <DependentUpon>Dashboard_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Domicile.resx">
+      <DependentUpon>Domicile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Admission\StudentAdmission.resx">
+      <DependentUpon>StudentAdmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmiitStudentFee.resx">
+      <DependentUpon>SubmiitStudentFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStudent\ViewStudents.resx">
+      <DependentUpon>ViewStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fidx png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fidxSoftwareHouse software.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIDX ILLUSTRATOR.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
